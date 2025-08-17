@@ -24,10 +24,49 @@ class Person:
     _weight: Quantity = Quantity(0.0, "kg")  # Default weight in kg
     _height: Quantity = Quantity(0.0, "cm")  # Default height in cm
     _birthday: Optional[date] = None  # Optional birthday for age calculation
-    pal: float = 1.2  # Physical Activity Level, default to sedentary
+    _pal_category: Literal["sedentary", "low active", "active", "very active", "athlete"] = "sedentary"  # Physical Activity Level, default to sedentary
     body_fat_percent: Optional[float] = None  # needed for Katch–McArdle
     bmr_mode: BmrMode = BmrMode.MIFFLIN_ST_JEOR
+    _weight_change_rate: Quantity = Quantity(0.0, "kg/week")  # Default weight change rate in kg/week
+
+    @property
+    def weight_change_rate(self, units: Literal["kg/week", "lb/week"] = "kg/week") -> float:
+        """Weight change rate in specified units."""
+        return self._weight_change_rate.to(units).magnitude
     
+    def set_weight_change_rate(self, rate: float, units: Literal["kg/week", "lb/week"] = "kg/week") -> None:
+        """Set weight change rate in specified units."""
+        self._weight_change_rate = Quantity(rate, units).to("kg/week")
+
+    def _get_daily_caloric_deviation(self) -> float:
+        """Calculate daily caloric deviation based on weight change rate."""
+        if self._weight_change_rate.magnitude == 0:
+            return 0.0
+        # 1 kg of body weight is approximately 7700 kcal
+        return self._weight_change_rate.to("kg/week").magnitude * 7700 / 7.0
+    
+    @property
+    def pal(self) -> float:
+        """Physical Activity Level (PAL) multiplier based on category."""
+        pal_values = {
+            "sedentary": 1.2,
+            "low active": 1.5,
+            "active": 1.75,
+            "very active": 2.2,
+            "athlete": 2.5
+        }
+        return pal_values.get(self._pal_category, 1.0)
+
+    def set_pal_category(self, category: Literal["sedentary", "low active", "active", "very active", "athlete"]) -> None:
+        """Set the Physical Activity Level category."""
+        if category not in ["sedentary", "low active", "active", "very active", "athlete"]:
+            raise ValueError(f"Invalid PAL category: {category}")
+        self._pal_category = category
+
+    def get_pal_category(self) -> Literal["sedentary", "low active", "active", "very active", "athlete"]:
+        """Get the current Physical Activity Level category."""
+        return self._pal_category
+
     @property
     def age_years(self) -> float:
         """Age in years, calculated from birthday if available."""
@@ -85,18 +124,12 @@ class Person:
 
     def bmr_mifflin_st_jeor(self) -> float:
         """BMR (kcal/day) via Mifflin–St Jeor.
-        Notes
-        -----
-        Authored by ChatGPT.
         """
         s = 5 if self.sex == "male" else -161
         return 10*self.get_weight(units="kg") + 6.25*self.get_height(units="cm") - 5*self.age_years + s
 
     def bmr_harris_benedict_revised(self, p: Person) -> float:
         """BMR (kcal/day) via Harris–Benedict (Roza & Shizgal, 1984).
-        Notes
-        -----
-        Authored by ChatGPT.
         """
         if p.sex == "male":
             return 13.397*self.get_weight(units="kg") + 4.799*self.get_height(units="cm") - 5.677*p.age_years + 88.362
@@ -107,7 +140,6 @@ class Person:
         """RMR/BMR (kcal/day) via Katch–McArdle using fat-free mass.
         Notes
         -----
-        Authored by ChatGPT.
         Requires `body_fat_percent`.
         """
         if p.body_fat_percent is None:
@@ -120,10 +152,13 @@ class Person:
         """Total Daily Energy Expenditure (kcal/day) from BMR and PAL.
         Notes
         -----
-        Authored by ChatGPT.
         PAL bands (DRI): sedentary 1.0–<1.4, low active 1.4–<1.6,
         active 1.6–<1.9, very active 1.9–<2.5.
         """
         if self.pal <= 0:
             raise ValueError("PAL must be > 0.")
         return self.bmr * self.pal
+
+    def daily_tci(self) -> float:
+        """Daily Total Caloric Intake (kcal/day) based on weight change rate."""
+        return self.tdee + self._get_daily_caloric_deviation()

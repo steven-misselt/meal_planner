@@ -4,7 +4,7 @@ import json
 import re
 from pydantic import BaseModel
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Literal
 
 
 def _safe_float(x: Any, default: float = 0.0) -> float:
@@ -120,13 +120,6 @@ def annotate_recipe_json(path: str) -> Dict[str, Any]:
 
     return data
 
-
-if __name__ == "__main__":
-    # Example:
-    # updated = annotate_recipe_json(r"C:\path\to\Buttermilk Yogurt Ranch Dressing.json")
-    # print(updated["calories_per_serving"], updated["nova_score"])
-    pass
-
 class Ingredient(BaseModel):
     name: str | None
     amount: float | None
@@ -146,7 +139,8 @@ class Recipe(BaseModel):
     name: str | None
     description: str | None
     cuisine: str | None
-    meal_type: str | None
+    meal_type: Literal["breakfast", "lunch", "dinner", "dessert", "snack", "beverage", "condiment"] | None
+    scaling_category: Literal["discrete", "continuous"] | None
     ingredients: list[Ingredient] | None
     active_time: TimeInfo | None
     total_time: TimeInfo | None
@@ -191,18 +185,49 @@ def select_file(
         return path or None
 
 
-def create_file(client, file_path):
-    # Function to create a file with the Files API
+def create_file(client, file_path: str) -> str:
+    """
+    Re-encode/copy the selected image into a brand-new temp file
+    with a lowercase .jpg extension, then upload that temp path.
+    Returns the file_id from the Files API.
 
-    with open(file_path, "rb") as file_content:
-        result = client.files.create(
-            file=file_content,
-            purpose="vision",
-        )
-        return result.id
+    Authored by ChatGPT.
+    """
+    import tempfile
+    from pathlib import Path
+
+    if not file_path:
+        raise ValueError("No file selected")
+
+    # 1) Load and re-save as JPEG to guarantee both format and lowercase extension
+    try:
+        from PIL import Image
+    except ImportError:
+        raise RuntimeError("pip install pillow (or uv add pillow) to normalize images")
+
+    src = Path(file_path)
+    with Image.open(src) as im:
+        im = im.convert("RGB")  # ensure JPEG-compatible
+        with tempfile.NamedTemporaryFile(suffix=".jpg", delete=False) as tmp:
+            tmp_path = Path(tmp.name)
+        im.save(tmp_path, format="JPEG")
+
+    # 2) Upload the temp file (filename now ends with .jpg)
+    print(f"Uploading path (debug): {tmp_path}")  # sanity check
+    with open(tmp_path, "rb") as fh:
+        result = client.files.create(file=fh, purpose="vision")
+
+    # 3) Cleanup (best effort)
+    try:
+        tmp_path.unlink(missing_ok=True)
+    except Exception:
+        pass
+
+    return result.id
 
 
-def add_recipe():
+
+def add_recipe(add_to_database: bool = True) -> None:
     
     # Create client using API key from environment
     client = OpenAI(api_key=os.environ.get("OPENAI_MEAL_PLANNER_API_KEY"))
@@ -216,14 +241,27 @@ def add_recipe():
         - Step numbers should be sequential starting from 1.
         - Times should be in minutes.
         - If a range is given for any number, use the average value.
-        - Remember that things like Servings may be called something else like "Serves", "Makes", etc.
+        - Regarding serving sizes:
+            - If the number of servings is specified, use that.
+            - Remember that things like Servings may be called something else like "Serves", "Makes", etc.
+            - If the number of servings is not specified, first look again closely and make sure it isn't referred to as something slightly different or isn't strongly implied somewhere in the recipe.
+            - If you really can't see anything related to serving size listed in the recipe, estimate it base on the context, ingredients, recipe description, steps, or volume/amount specified. 
+            - If a volume or unit related to mass is called out for the whole recipe, or strongly implied by the ingredients listed, take that strongly into account.
+            - In general, when estimating serving sizes, assume slightly larger than average portion sizes.
+            - If the recipe is a dressing, sauce, or similar, try to estimate the number of servings in the recipe assuming a single serving is about 2 tablespoons (30 ml).
         - If the image is not a recipe, return null for all fields.
         - If a cuisine is not specified, do your best to infer it from the ingredients or context.
-        - If the meal type is not specified, estimate it based on the ingredients and context. The options are: breakfast, lunch, dinner, snack, dessert, or beverage.
+        - If the meal type is not specified, estimate it based on the ingredients and context. The options are: breakfast, lunch, dinner, snack, dessert, condiment, or beverage.
         - If calories are not specified, estimate for each ingredient.
         - If NOVA score is not specified, estimate for each ingredient and its processing level.
         - There maybe fragments of other recipes in the image, ignore them and focus on the main recipe.
         - If the recipe is in a different language, translate it to English.
+        - For the `scaling_category`, use "discrete" for recipes that can't be scaled up or down in a sensible continuous way (and instead need to be scaled discretely, in say 1/4, 1/2, or whole increments) and "continuous" for those with serving sizes that can be scaled smoothly (like soups).
+            - For example, a burrito is "discrete" because it is made as whole units (say, two burritos) and it doesn't make sense to do much more than cut it in half.
+            - A soup is "continuous" because you can scale it up or down easily. For example, it is just as sensible to divide a batch of soup into 7 servings as it is to divide it into 8 servings.
+            - Pasta is closest to continuous, as it can be divided up easily, whereas a sandwich is discrete because it is made as a whole unit (say, one sandwich) and it doesn't make sense to divide it into units smaller than say a half or at most a quarter.
+            - Brownies are a bit tricky. They are best classified as 'continuous' for our case because they are being made from scratch at home, and can be cut into any number of pieces. If they were store-bought, they would be discrete.
+            - If the recipe is a drink, it is always continuous.
         """
 
     print("Please select the recipe image file.")
@@ -273,3 +311,8 @@ def add_recipe():
 
     # Pass a real path to the function (str or Path both fine if the function handles it)
     data = annotate_recipe_json(os.fspath(recipe_path))
+
+    if add_to_database:
+        from load_from_json import load_recipe_file
+        recipe_id = load_recipe_file(os.fspath(recipe_path))
+        print(f"Recipe '{recipe_name}' added to database with ID: {recipe_id}")
