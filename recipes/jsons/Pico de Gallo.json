@@ -1,28 +1,30 @@
 {
   "name": "Pico de Gallo",
-  "description": "Fresh chopped tomato salsa with poblano chile, onion, lime, cumin, and cilantro. Yield about 4 cups.",
+  "description": "Fresh hand-chopped Mexican salsa of tomatoes, poblano peppers, onion, lime juice, cumin, and cilantro. Let it marinate so the flavors meld.",
   "cuisine": "Mexican",
+  "meal_type": "condiment",
+  "scaling_category": "continuous",
   "ingredients": [
     {
       "name": "Roma tomatoes",
       "amount": 8.0,
       "nova_score": 1.0,
-      "calories": 176.0,
-      "units": "count"
+      "calories": 160.0,
+      "units": "whole"
     },
     {
-      "name": "Poblano chiles",
+      "name": "Poblano peppers",
       "amount": 2.0,
       "nova_score": 1.0,
-      "calories": 60.0,
-      "units": "count"
+      "calories": 40.0,
+      "units": "whole"
     },
     {
-      "name": "White onion, medium",
+      "name": "White onion (medium)",
       "amount": 1.0,
       "nova_score": 1.0,
-      "calories": 48.0,
-      "units": "count"
+      "calories": 45.0,
+      "units": "medium"
     },
     {
       "name": "Freshly squeezed lime juice",
@@ -41,7 +43,7 @@
     {
       "name": "Ground cumin",
       "amount": 0.5,
-      "nova_score": 2.0,
+      "nova_score": 1.0,
       "calories": 4.0,
       "units": "teaspoon"
     },
@@ -54,28 +56,32 @@
     }
   ],
   "active_time": {
-    "length": 15.0,
+    "length": 5.0,
     "units": "minutes"
   },
   "total_time": {
-    "length": 30.0,
+    "length": 65.0,
     "units": "minutes"
   },
-  "number_of_servings": 4.0,
+  "number_of_servings": 16.0,
   "steps": [
     {
       "step_number": 1,
-      "description": "Dice the tomatoes into 1/4-inch pieces. Remove stems and seeds from the poblanos and finely chop. Finely chop the onion and cilantro."
+      "description": "Dice the tomatoes into 1/4-inch pieces. Remove stems and seeds from the poblanos and finely chop. Finely chop the onion."
     },
     {
       "step_number": 2,
-      "description": "In a large bowl, combine tomatoes with lime juice, salt, and cumin. Add the chopped poblano, onion, and cilantro and mix well. Let the salsa sit to marinate for at least 15 minutes before serving."
+      "description": "In a large bowl, combine tomatoes, poblanos, onion, lime juice, salt, and cumin; mix well. Stir in the cilantro to combine."
     },
     {
       "step_number": 3,
-      "description": "Store any remaining salsa in an airtight container in the refrigerator for up to 2 days."
+      "description": "Let the salsa sit to marinate for at least 1 hour before serving."
+    },
+    {
+      "step_number": 4,
+      "description": "Store leftovers in an airtight container in the refrigerator for up to 2 days."
     }
   ],
-  "calories_per_serving": 87.5,
-  "nova_score": 1.0114285714285713
+  "calories_per_serving": 19.4375,
+  "nova_score": 1.0
 }

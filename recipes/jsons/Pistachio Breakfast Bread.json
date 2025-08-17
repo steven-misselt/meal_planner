@@ -1,0 +1,145 @@
+{
+  "name": "Pistachio Breakfast Bread",
+  "description": "A tender, pistachio-forward breakfast loaf inspired by an old-fashioned family recipe. It swaps in real pistachio flour and a cinnamon–pistachio sugar ribbon. Bake in an angel food cake or Bundt pan.",
+  "cuisine": "American",
+  "meal_type": "breakfast",
+  "scaling_category": "continuous",
+  "ingredients": [
+    {
+      "name": "vegetable oil (for greasing pan)",
+      "amount": null,
+      "nova_score": 2.0,
+      "calories": null,
+      "units": null
+    },
+    {
+      "name": "granulated sugar",
+      "amount": 3.0,
+      "nova_score": 2.0,
+      "calories": 2320.0,
+      "units": "cups"
+    },
+    {
+      "name": "pistachios, finely chopped",
+      "amount": 0.33,
+      "nova_score": 1.0,
+      "calories": 230.0,
+      "units": "cups"
+    },
+    {
+      "name": "ground cinnamon",
+      "amount": 2.0,
+      "nova_score": 1.0,
+      "calories": 12.0,
+      "units": "teaspoons"
+    },
+    {
+      "name": "all-purpose flour",
+      "amount": 2.0,
+      "nova_score": 1.0,
+      "calories": 910.0,
+      "units": "cups"
+    },
+    {
+      "name": "pistachio flour",
+      "amount": 1.0,
+      "nova_score": 1.0,
+      "calories": 640.0,
+      "units": "cups"
+    },
+    {
+      "name": "baking powder",
+      "amount": 1.0,
+      "nova_score": 2.0,
+      "calories": 6.0,
+      "units": "tablespoon"
+    },
+    {
+      "name": "kosher salt",
+      "amount": 1.5,
+      "nova_score": 2.0,
+      "calories": 0.0,
+      "units": "teaspoons"
+    },
+    {
+      "name": "whole milk",
+      "amount": 1.0,
+      "nova_score": 1.0,
+      "calories": 150.0,
+      "units": "cups"
+    },
+    {
+      "name": "sour cream",
+      "amount": 0.5,
+      "nova_score": 3.0,
+      "calories": 230.0,
+      "units": "cups"
+    },
+    {
+      "name": "pure vanilla extract",
+      "amount": 0.5,
+      "nova_score": 2.0,
+      "calories": 6.0,
+      "units": "teaspoons"
+    },
+    {
+      "name": "unsalted butter, room temperature",
+      "amount": 4.0,
+      "nova_score": 2.0,
+      "calories": 3240.0,
+      "units": "sticks"
+    },
+    {
+      "name": "large eggs, separated, at room temperature",
+      "amount": 6.0,
+      "nova_score": 1.0,
+      "calories": 432.0,
+      "units": "eggs"
+    }
+  ],
+  "active_time": {
+    "length": 20.0,
+    "units": "minutes"
+  },
+  "total_time": {
+    "length": 70.0,
+    "units": "minutes"
+  },
+  "number_of_servings": 9.0,
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Preheat oven to 350°F (175°C). Grease an angel food cake pan or Bundt pan with oil."
+    },
+    {
+      "step_number": 2,
+      "description": "In a small bowl, mix 1/2 cup of the sugar with the chopped pistachios and cinnamon; set aside."
+    },
+    {
+      "step_number": 3,
+      "description": "Using a mixer with the whisk, beat the egg whites on high to soft peaks (about 2 minutes). Transfer to a bowl."
+    },
+    {
+      "step_number": 4,
+      "description": "Fit mixer with paddle. Cream butter with the remaining 2 1/2 cups sugar until light and fluffy (about 2 minutes). Beat in egg yolks one at a time."
+    },
+    {
+      "step_number": 5,
+      "description": "Whisk together all-purpose flour, pistachio flour, baking powder, and salt. In another bowl, whisk milk, sour cream, and vanilla."
+    },
+    {
+      "step_number": 6,
+      "description": "With mixer on low, add the dry ingredients to the butter mixture in 3 additions, alternating with the milk mixture, beginning and ending with dry; mix just to combine."
+    },
+    {
+      "step_number": 7,
+      "description": "Stir a small portion of the whipped whites into the batter to loosen, then fold in the remaining whites until no streaks remain. Pour half the batter into the pan, sprinkle on half the pistachio–cinnamon sugar, add remaining batter, and finish with the rest of the nut mixture; gently swirl with a knife."
+    },
+    {
+      "step_number": 8,
+      "description": "Bake until a tester comes out clean, about 50–60 minutes. Cool in pan on a rack about 20 minutes, then invert to unmold. Cool slightly before slicing. Store airtight 2–3 days."
+    }
+  ],
+  "calories_per_serving": 908.4444444444445,
+  "nova_score": 1.7377690802348336
+}

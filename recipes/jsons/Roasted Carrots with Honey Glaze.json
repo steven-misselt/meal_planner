@@ -1,0 +1,81 @@
+{
+  "name": "Roasted Carrots with Honey Glaze",
+  "description": "Tender roasted carrots tossed with olive oil, thyme, and salt, then finished with a honey glaze.",
+  "cuisine": "American",
+  "meal_type": "dinner",
+  "scaling_category": "continuous",
+  "ingredients": [
+    {
+      "name": "carrots, medium-large",
+      "amount": 12.0,
+      "nova_score": 1.0,
+      "calories": 300.0,
+      "units": "carrots"
+    },
+    {
+      "name": "extra-virgin olive oil",
+      "amount": 2.0,
+      "nova_score": 2.0,
+      "calories": 238.0,
+      "units": "tablespoons"
+    },
+    {
+      "name": "fresh thyme leaves, chopped",
+      "amount": 1.0,
+      "nova_score": 1.0,
+      "calories": 1.0,
+      "units": "teaspoon"
+    },
+    {
+      "name": "kosher salt",
+      "amount": 0.5,
+      "nova_score": 2.0,
+      "calories": 0.0,
+      "units": "teaspoon"
+    },
+    {
+      "name": "honey",
+      "amount": 0.25,
+      "nova_score": 2.0,
+      "calories": 256.0,
+      "units": "cup"
+    }
+  ],
+  "active_time": {
+    "length": 15.0,
+    "units": "minutes"
+  },
+  "total_time": {
+    "length": 50.0,
+    "units": "minutes"
+  },
+  "number_of_servings": 6.0,
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Preheat the oven to 350°F."
+    },
+    {
+      "step_number": 2,
+      "description": "Trim the tops of the carrots, peel them, and cut them in half lengthwise."
+    },
+    {
+      "step_number": 3,
+      "description": "Place carrots on a sheet pan. Drizzle with olive oil, sprinkle with thyme and salt, and toss to coat evenly."
+    },
+    {
+      "step_number": 4,
+      "description": "Roast for about 20 minutes, until tender but not soft; they should hold their shape without bending when picked up."
+    },
+    {
+      "step_number": 5,
+      "description": "Drizzle the honey over the hot carrots."
+    },
+    {
+      "step_number": 6,
+      "description": "Return the pan to the oven and roast for 10 minutes more."
+    }
+  ],
+  "calories_per_serving": 132.5,
+  "nova_score": 1.6213836477987422
+}

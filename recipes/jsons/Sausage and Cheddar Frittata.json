@@ -1,17 +1,19 @@
 {
   "name": "Sausage and Cheddar Frittata",
-  "description": "A hearty, crowd‑pleasing cast‑iron frittata with breakfast sausage, sweet onion and sharp white Cheddar, finished with diced tomato and parsley. Great hot or at room temperature.",
-  "cuisine": "Italian-American",
+  "description": "A hearty baked egg dish with breakfast sausage, onion, tomatoes, and sharp white Cheddar—great warm or at room temperature.",
+  "cuisine": "Italian",
+  "meal_type": "breakfast",
+  "scaling_category": "continuous",
   "ingredients": [
     {
-      "name": "breakfast sausage (casings removed)",
+      "name": "breakfast sausage, removed from casings",
       "amount": 12.0,
       "nova_score": 4.0,
-      "calories": 1080.0,
+      "calories": 980.0,
       "units": "ounces"
     },
     {
-      "name": "extra‑virgin olive oil",
+      "name": "extra-virgin olive oil",
       "amount": 2.0,
       "nova_score": 2.0,
       "calories": 240.0,
@@ -25,11 +27,11 @@
       "units": "medium"
     },
     {
-      "name": "eggs",
+      "name": "large eggs",
       "amount": 12.0,
       "nova_score": 1.0,
-      "calories": 840.0,
-      "units": "large"
+      "calories": 864.0,
+      "units": null
     },
     {
       "name": "heavy cream",
@@ -39,10 +41,10 @@
       "units": "cup"
     },
     {
-      "name": "sharp white Cheddar, freshly grated",
+      "name": "sharp white Cheddar, freshly grated (about 8 ounces)",
       "amount": 2.0,
       "nova_score": 3.0,
-      "calories": 920.0,
+      "calories": 912.0,
       "units": "cups"
     },
     {
@@ -53,21 +55,21 @@
       "units": "teaspoon"
     },
     {
-      "name": "black pepper, freshly ground",
+      "name": "black pepper",
       "amount": 0.5,
       "nova_score": 1.0,
-      "calories": 3.0,
+      "calories": 5.0,
       "units": "teaspoon"
     },
     {
-      "name": "Roma tomato, cut into 1/2‑inch dice",
-      "amount": 1.0,
+      "name": "Roma tomatoes, 1/2-inch dice",
+      "amount": 2.0,
       "nova_score": 1.0,
-      "calories": 11.0,
-      "units": "medium"
+      "calories": 22.0,
+      "units": "count"
     },
     {
-      "name": "flat‑leaf parsley, chopped (for garnish)",
+      "name": "flat-leaf parsley, chopped (for garnish)",
       "amount": null,
       "nova_score": 1.0,
       "calories": 2.0,
@@ -97,29 +99,29 @@
     },
     {
       "step_number": 2,
-      "description": "In a large cast‑iron pan over high heat, brown the sausage, breaking it into small pieces, until cooked through, about 5 minutes. Using a slotted spoon, transfer sausage to a plate, leaving the fat in the pan."
+      "description": "In a large cast-iron skillet over high heat, cook the breakfast sausage, breaking it up, until browned and beginning to crisp, about 5 minutes. Remove with a slotted spoon to a plate, leaving the fat in the pan."
     },
     {
       "step_number": 3,
-      "description": "Add the olive oil and onion to the pan, reduce heat to medium, and cook, stirring, until very soft and translucent, about 5 minutes. Turn off the heat."
+      "description": "Add the olive oil and onion to the skillet, reduce heat to medium, and cook, stirring occasionally, until softened and translucent at the edges, about 5 minutes. Turn off the heat."
     },
     {
       "step_number": 4,
-      "description": "In a large bowl whisk the eggs, then whisk in the cream. Stir in half the cooked sausage and half the grated Cheddar. Season with the salt and black pepper."
+      "description": "In a large bowl whisk the eggs, then whisk in the heavy cream. Stir in half the cooked sausage and half the Cheddar. Season with the salt and pepper."
     },
     {
       "step_number": 5,
-      "description": "Pour the egg mixture over the onions in the pan. Sprinkle the remaining sausage and the remaining Cheddar on top, then scatter the diced tomato evenly."
+      "description": "Pour the egg mixture into the skillet over the onions. Sprinkle the remaining sausage over the top, scatter the diced tomatoes, and top with the remaining Cheddar."
     },
     {
       "step_number": 6,
-      "description": "Set the pan over medium heat and cook just until the edges begin to set and small bubbles form, 3–5 minutes. Transfer the pan to the oven and bake until fully set and golden brown, about 25 minutes."
+      "description": "Set the pan over medium heat and cook just until small bubbles form around the edge, 2–3 minutes. Transfer to the oven and bake until fully set and golden, about 25 minutes."
     },
     {
       "step_number": 7,
-      "description": "Let cool for 10 minutes or to room temperature. Sprinkle with chopped parsley, cut into wedges, and serve. Offer hot sauce if you like."
+      "description": "Let cool for 10 minutes. Sprinkle with chopped parsley, cut into wedges, and serve warm or at room temperature with hot sauce if desired."
     }
   ],
-  "calories_per_serving": 590.0,
-  "nova_score": 2.5028248587570623
+  "calories_per_serving": 578.1666666666666,
+  "nova_score": 2.442490631305852
 }
