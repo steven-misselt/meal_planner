@@ -6,5 +6,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "openai>=1.99.9",
+    "pint>=0.25",
     "pydantic>=2.11.7",
+    "setuptools>=80.9.0",
 ]

@@ -1,0 +1,120 @@
+{
+  "name": "Blueberry Yogurt Pancakes",
+  "description": "Thin, crispy‑edged blueberry pancakes with creamy yogurt in the batter and a touch of lemon; serve with maple syrup and extra blueberries.",
+  "cuisine": "American",
+  "ingredients": [
+    {
+      "name": "all-purpose flour",
+      "amount": 1.0,
+      "nova_score": 1.0,
+      "calories": 455.0,
+      "units": "cup"
+    },
+    {
+      "name": "granulated sugar",
+      "amount": 2.0,
+      "nova_score": 2.0,
+      "calories": 100.0,
+      "units": "tablespoons"
+    },
+    {
+      "name": "baking powder",
+      "amount": 1.0,
+      "nova_score": 4.0,
+      "calories": 5.0,
+      "units": "teaspoon"
+    },
+    {
+      "name": "kosher salt",
+      "amount": 0.25,
+      "nova_score": 2.0,
+      "calories": 0.0,
+      "units": "teaspoon"
+    },
+    {
+      "name": "eggs",
+      "amount": 2.0,
+      "nova_score": 1.0,
+      "calories": 144.0,
+      "units": "large"
+    },
+    {
+      "name": "whole milk",
+      "amount": 1.0,
+      "nova_score": 1.0,
+      "calories": 149.0,
+      "units": "cup"
+    },
+    {
+      "name": "plain whole-milk yogurt",
+      "amount": 0.5,
+      "nova_score": 3.0,
+      "calories": 80.0,
+      "units": "cup"
+    },
+    {
+      "name": "pure vanilla extract",
+      "amount": 0.25,
+      "nova_score": 3.0,
+      "calories": 3.0,
+      "units": "teaspoon"
+    },
+    {
+      "name": "unsalted butter, melted (plus more for the pan)",
+      "amount": 2.0,
+      "nova_score": 2.0,
+      "calories": 204.0,
+      "units": "tablespoons"
+    },
+    {
+      "name": "freshly squeezed lemon juice",
+      "amount": 1.0,
+      "nova_score": 1.0,
+      "calories": 4.0,
+      "units": "tablespoon"
+    },
+    {
+      "name": "fresh blueberries, plus more for serving",
+      "amount": 1.0,
+      "nova_score": 1.0,
+      "calories": 85.0,
+      "units": "cup"
+    },
+    {
+      "name": "pure maple syrup",
+      "amount": null,
+      "nova_score": 2.0,
+      "calories": null,
+      "units": null
+    }
+  ],
+  "active_time": {
+    "length": 25.0,
+    "units": "minutes"
+  },
+  "total_time": {
+    "length": 25.0,
+    "units": "minutes"
+  },
+  "number_of_servings": 4.0,
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Mix the flour, sugar, baking powder, and salt together in a small bowl."
+    },
+    {
+      "step_number": 2,
+      "description": "In a medium bowl whisk the eggs lightly, then whisk in the milk, yogurt, vanilla, melted butter, and lemon juice. Add the flour mixture and gently stir until combined; do not overmix. Fold in the blueberries."
+    },
+    {
+      "step_number": 3,
+      "description": "Melt a couple tablespoons of butter in a large skillet over medium heat. When very hot, ladle in batter using roughly 1/2 cup per pancake. Cook until bubbles burst, about 2 minutes, then flip and cook another minute until lightly browned."
+    },
+    {
+      "step_number": 4,
+      "description": "Repeat with more butter and batter until all the mixture is used. Serve with maple syrup and extra blueberries."
+    }
+  ],
+  "calories_per_serving": 307.25,
+  "nova_score": 1.3946297803091945
+}

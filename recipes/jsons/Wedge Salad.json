@@ -1,0 +1,67 @@
+{
+  "name": "Wedge Salad",
+  "description": "A classic American steakhouse-style wedge salad of crisp iceberg lettuce topped with crunchy bacon, creamy buttermilk–yogurt ranch dressing, tomatoes, and herbs. Easy to prepare and great as a side.",
+  "cuisine": "American",
+  "ingredients": [
+    {
+      "name": "Bacon, strips",
+      "amount": 4.0,
+      "nova_score": 3.0,
+      "calories": 168.0,
+      "units": "strips"
+    },
+    {
+      "name": "Iceberg lettuce, head",
+      "amount": 1.0,
+      "nova_score": 1.0,
+      "calories": 84.0,
+      "units": "head"
+    },
+    {
+      "name": "Buttermilk Yogurt Ranch Dressing",
+      "amount": 0.875,
+      "nova_score": 3.0,
+      "calories": 420.0,
+      "units": "cup"
+    },
+    {
+      "name": "Tomatoes, large, cut into 1-inch cubes",
+      "amount": 2.0,
+      "nova_score": 1.0,
+      "calories": 66.0,
+      "units": "tomatoes"
+    },
+    {
+      "name": "Parsley and chives, roughly chopped (optional)",
+      "amount": null,
+      "nova_score": 1.0,
+      "calories": 5.0,
+      "units": null
+    }
+  ],
+  "active_time": {
+    "length": 10.0,
+    "units": "minutes"
+  },
+  "total_time": {
+    "length": 15.0,
+    "units": "minutes"
+  },
+  "number_of_servings": 5.0,
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Cook the bacon in a pan over medium heat until crisp, turning as needed, about 4 minutes. Break into small pieces and set aside."
+    },
+    {
+      "step_number": 2,
+      "description": "Core the iceberg and cut it in half from top to stem. Cut each half into 2 to 3 wedges, keeping the cuts running top to bottom so the leaves nestle together."
+    },
+    {
+      "step_number": 3,
+      "description": "Spoon 2 to 3 tablespoons of dressing onto each wedge, distributing evenly. Top each with equal amounts of tomato and bacon, then finish with herbs if using."
+    }
+  ],
+  "calories_per_serving": 148.6,
+  "nova_score": 2.582772543741588
+}

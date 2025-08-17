@@ -1,0 +1,93 @@
+{
+  "name": "Buttermilk Yogurt Ranch Dressing",
+  "description": "Tangy, creamy homemade ranch dressing with buttermilk, Greek yogurt, garlic, lemon, dill, and parsley.",
+  "cuisine": "American",
+  "ingredients": [
+    {
+      "name": "garlic cloves",
+      "amount": 4.0,
+      "nova_score": 1.0,
+      "calories": 18.0,
+      "units": "cloves"
+    },
+    {
+      "name": "kosher salt",
+      "amount": 1.0,
+      "nova_score": 2.0,
+      "calories": 0.0,
+      "units": "teaspoon"
+    },
+    {
+      "name": "kosher salt",
+      "amount": 1.0,
+      "nova_score": 2.0,
+      "calories": 0.0,
+      "units": "tablespoon"
+    },
+    {
+      "name": "buttermilk",
+      "amount": 2.0,
+      "nova_score": 1.0,
+      "calories": 196.0,
+      "units": "cups"
+    },
+    {
+      "name": "plain Greek yogurt",
+      "amount": 1.0,
+      "nova_score": 1.0,
+      "calories": 150.0,
+      "units": "cup"
+    },
+    {
+      "name": "freshly squeezed lemon juice",
+      "amount": 2.0,
+      "nova_score": 1.0,
+      "calories": 6.0,
+      "units": "tablespoons"
+    },
+    {
+      "name": "fresh dill, finely chopped",
+      "amount": 1.0,
+      "nova_score": 1.0,
+      "calories": 1.0,
+      "units": "tablespoon"
+    },
+    {
+      "name": "flat-leaf parsley, finely chopped",
+      "amount": 2.0,
+      "nova_score": 1.0,
+      "calories": 2.0,
+      "units": "tablespoons"
+    },
+    {
+      "name": "ground black pepper",
+      "amount": null,
+      "nova_score": 1.0,
+      "calories": 2.0,
+      "units": "to taste"
+    }
+  ],
+  "active_time": {
+    "length": 5.0,
+    "units": "minutes"
+  },
+  "total_time": {
+    "length": 65.0,
+    "units": "minutes"
+  },
+  "number_of_servings": 3.0,
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Put the garlic and 1 teaspoon of the salt in a mortar and mash to a rough paste (or press the garlic and mix with the salt)."
+    },
+    {
+      "step_number": 2,
+      "description": "Scrape the garlic paste into a large jar and add the buttermilk, yogurt, and lemon juice. Seal and shake to combine, then season with the dill, parsley, and the remaining tablespoon of salt. Add black pepper to taste and shake well."
+    },
+    {
+      "step_number": 3,
+      "description": "Refrigerate to let the dressing mellow for at least 1 hour, preferably overnight."
+    }
+  ]
+}

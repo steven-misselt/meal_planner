@@ -1,0 +1,125 @@
+{
+  "name": "Sausage and Cheddar Frittata",
+  "description": "A hearty, crowd‑pleasing cast‑iron frittata with breakfast sausage, sweet onion and sharp white Cheddar, finished with diced tomato and parsley. Great hot or at room temperature.",
+  "cuisine": "Italian-American",
+  "ingredients": [
+    {
+      "name": "breakfast sausage (casings removed)",
+      "amount": 12.0,
+      "nova_score": 4.0,
+      "calories": 1080.0,
+      "units": "ounces"
+    },
+    {
+      "name": "extra‑virgin olive oil",
+      "amount": 2.0,
+      "nova_score": 2.0,
+      "calories": 240.0,
+      "units": "tablespoons"
+    },
+    {
+      "name": "sweet onion, finely chopped",
+      "amount": 1.0,
+      "nova_score": 1.0,
+      "calories": 44.0,
+      "units": "medium"
+    },
+    {
+      "name": "eggs",
+      "amount": 12.0,
+      "nova_score": 1.0,
+      "calories": 840.0,
+      "units": "large"
+    },
+    {
+      "name": "heavy cream",
+      "amount": 0.5,
+      "nova_score": 1.0,
+      "calories": 400.0,
+      "units": "cup"
+    },
+    {
+      "name": "sharp white Cheddar, freshly grated",
+      "amount": 2.0,
+      "nova_score": 3.0,
+      "calories": 920.0,
+      "units": "cups"
+    },
+    {
+      "name": "kosher salt",
+      "amount": 1.0,
+      "nova_score": 2.0,
+      "calories": 0.0,
+      "units": "teaspoon"
+    },
+    {
+      "name": "black pepper, freshly ground",
+      "amount": 0.5,
+      "nova_score": 1.0,
+      "calories": 3.0,
+      "units": "teaspoon"
+    },
+    {
+      "name": "Roma tomato, cut into 1/2‑inch dice",
+      "amount": 1.0,
+      "nova_score": 1.0,
+      "calories": 11.0,
+      "units": "medium"
+    },
+    {
+      "name": "flat‑leaf parsley, chopped (for garnish)",
+      "amount": null,
+      "nova_score": 1.0,
+      "calories": 2.0,
+      "units": null
+    },
+    {
+      "name": "hot sauce (optional)",
+      "amount": null,
+      "nova_score": 3.0,
+      "calories": 0.0,
+      "units": null
+    }
+  ],
+  "active_time": {
+    "length": 20.0,
+    "units": "minutes"
+  },
+  "total_time": {
+    "length": 40.0,
+    "units": "minutes"
+  },
+  "number_of_servings": 6.0,
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Preheat the oven to 350°F (175°C)."
+    },
+    {
+      "step_number": 2,
+      "description": "In a large cast‑iron pan over high heat, brown the sausage, breaking it into small pieces, until cooked through, about 5 minutes. Using a slotted spoon, transfer sausage to a plate, leaving the fat in the pan."
+    },
+    {
+      "step_number": 3,
+      "description": "Add the olive oil and onion to the pan, reduce heat to medium, and cook, stirring, until very soft and translucent, about 5 minutes. Turn off the heat."
+    },
+    {
+      "step_number": 4,
+      "description": "In a large bowl whisk the eggs, then whisk in the cream. Stir in half the cooked sausage and half the grated Cheddar. Season with the salt and black pepper."
+    },
+    {
+      "step_number": 5,
+      "description": "Pour the egg mixture over the onions in the pan. Sprinkle the remaining sausage and the remaining Cheddar on top, then scatter the diced tomato evenly."
+    },
+    {
+      "step_number": 6,
+      "description": "Set the pan over medium heat and cook just until the edges begin to set and small bubbles form, 3–5 minutes. Transfer the pan to the oven and bake until fully set and golden brown, about 25 minutes."
+    },
+    {
+      "step_number": 7,
+      "description": "Let cool for 10 minutes or to room temperature. Sprinkle with chopped parsley, cut into wedges, and serve. Offer hot sauce if you like."
+    }
+  ],
+  "calories_per_serving": 590.0,
+  "nova_score": 2.5028248587570623
+}

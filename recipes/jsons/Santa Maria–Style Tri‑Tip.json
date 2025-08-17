@@ -1,0 +1,99 @@
+{
+  "name": "Santa Maria–Style Tri‑Tip",
+  "description": "A Central Coast (California) barbecue classic: a triangular sirloin roast seasoned with garlic, salt, pepper and a simple marinade, grilled hot then finished over lower heat while basting with a vinegar‑oil mixture. Rest and slice against the grain.",
+  "cuisine": "American (Californian/Santa Maria BBQ)",
+  "ingredients": [
+    {
+      "name": "Tri‑tip beef roast, room temperature",
+      "amount": 1.75,
+      "nova_score": 1.0,
+      "calories": 1722.0,
+      "units": "lb"
+    },
+    {
+      "name": "Garlic cloves, minced or crushed",
+      "amount": 3.0,
+      "nova_score": 1.0,
+      "calories": 13.0,
+      "units": "cloves"
+    },
+    {
+      "name": "Kosher salt",
+      "amount": 2.0,
+      "nova_score": 2.0,
+      "calories": 0.0,
+      "units": "teaspoons"
+    },
+    {
+      "name": "Ground black pepper",
+      "amount": 2.0,
+      "nova_score": 2.0,
+      "calories": 12.0,
+      "units": "teaspoons"
+    },
+    {
+      "name": "Soy sauce",
+      "amount": 0.33,
+      "nova_score": 3.0,
+      "calories": 53.0,
+      "units": "cup"
+    },
+    {
+      "name": "Extra‑virgin olive oil (for marinade)",
+      "amount": 0.33,
+      "nova_score": 2.0,
+      "calories": 634.0,
+      "units": "cup"
+    },
+    {
+      "name": "Red wine vinegar (for baste)",
+      "amount": 0.5,
+      "nova_score": 2.0,
+      "calories": 3.0,
+      "units": "cup"
+    },
+    {
+      "name": "Water (for baste)",
+      "amount": 0.5,
+      "nova_score": 1.0,
+      "calories": 0.0,
+      "units": "cup"
+    },
+    {
+      "name": "Extra‑virgin olive oil (for baste)",
+      "amount": 2.0,
+      "nova_score": 2.0,
+      "calories": 238.0,
+      "units": "tablespoons"
+    }
+  ],
+  "active_time": {
+    "length": 60.0,
+    "units": "minutes"
+  },
+  "total_time": {
+    "length": 90.0,
+    "units": "minutes"
+  },
+  "number_of_servings": 4.0,
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Poke a few small holes in the tri‑tip. Rub all over with the garlic, salt, and pepper. Add the soy sauce and 1/3 cup olive oil and massage to coat. Let sit about 30 minutes at room temperature, or refrigerate overnight, then bring to room temperature before cooking."
+    },
+    {
+      "step_number": 2,
+      "description": "Prepare a grill for high heat for searing and a cooler zone for finishing. Clean and oil the grates. Make the Santa Maria baste by combining red wine vinegar, water, and 2 tablespoons olive oil in a plastic spray bottle and shake well."
+    },
+    {
+      "step_number": 3,
+      "description": "Sear the tri‑tip over direct high heat, about 5–7 minutes per side, until well browned. Move to indirect heat and cook 20–40 minutes, turning occasionally and spraying with the baste every 5–10 minutes, until the internal temperature reaches about 130°F for medium‑rare (or 140°F for medium)."
+    },
+    {
+      "step_number": 4,
+      "description": "Transfer to a board and rest 10 minutes. Slice against the grain into 1/2‑inch slices and serve."
+    }
+  ],
+  "calories_per_serving": 668.75,
+  "nova_score": 1.371214953271028
+}

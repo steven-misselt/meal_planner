@@ -1,0 +1,81 @@
+{
+  "name": "Pico de Gallo",
+  "description": "Fresh chopped tomato salsa with poblano chile, onion, lime, cumin, and cilantro. Yield about 4 cups.",
+  "cuisine": "Mexican",
+  "ingredients": [
+    {
+      "name": "Roma tomatoes",
+      "amount": 8.0,
+      "nova_score": 1.0,
+      "calories": 176.0,
+      "units": "count"
+    },
+    {
+      "name": "Poblano chiles",
+      "amount": 2.0,
+      "nova_score": 1.0,
+      "calories": 60.0,
+      "units": "count"
+    },
+    {
+      "name": "White onion, medium",
+      "amount": 1.0,
+      "nova_score": 1.0,
+      "calories": 48.0,
+      "units": "count"
+    },
+    {
+      "name": "Freshly squeezed lime juice",
+      "amount": 1.0,
+      "nova_score": 1.0,
+      "calories": 60.0,
+      "units": "cup"
+    },
+    {
+      "name": "Kosher salt",
+      "amount": 2.0,
+      "nova_score": 2.0,
+      "calories": 0.0,
+      "units": "teaspoons"
+    },
+    {
+      "name": "Ground cumin",
+      "amount": 0.5,
+      "nova_score": 2.0,
+      "calories": 4.0,
+      "units": "teaspoon"
+    },
+    {
+      "name": "Cilantro, roughly chopped",
+      "amount": 0.5,
+      "nova_score": 1.0,
+      "calories": 2.0,
+      "units": "cup"
+    }
+  ],
+  "active_time": {
+    "length": 15.0,
+    "units": "minutes"
+  },
+  "total_time": {
+    "length": 30.0,
+    "units": "minutes"
+  },
+  "number_of_servings": 4.0,
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Dice the tomatoes into 1/4-inch pieces. Remove stems and seeds from the poblanos and finely chop. Finely chop the onion and cilantro."
+    },
+    {
+      "step_number": 2,
+      "description": "In a large bowl, combine tomatoes with lime juice, salt, and cumin. Add the chopped poblano, onion, and cilantro and mix well. Let the salsa sit to marinate for at least 15 minutes before serving."
+    },
+    {
+      "step_number": 3,
+      "description": "Store any remaining salsa in an airtight container in the refrigerator for up to 2 days."
+    }
+  ],
+  "calories_per_serving": 87.5,
+  "nova_score": 1.0114285714285713
+}
